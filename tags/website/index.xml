@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>website on Harshad</title>
+    <link>http://harshad.me/tags/website/</link>
+    <description>Recent content in website on Harshad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://harshad.me/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static Website with Password Protection</title>
+      <link>http://harshad.me/posts/static-website/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://harshad.me/posts/static-website/</guid>
+      <description>After numerous attempts at finding a cheap and easy solution to making a password protected static website, I finally have settled my mind on one! Before going over the solution let me go over the requirements that I had in my mind for the website:
+Cheap Static and blog-aware Password protection on a part of the website Smooth and easy workflow to move content from private part to public Preferably, an automatic CI/CD I tried multiple solutions such as setting up Heroku dynos, CloudCanon etc.</description>
+    </item>
+    
+  </channel>
+</rss>
