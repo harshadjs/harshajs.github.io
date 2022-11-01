@@ -1,40 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>music on Harshad</title>
-    <link>http://harshad.me/tags/music/</link>
-    <description>Recent content in music on Harshad</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://harshad.me/tags/music/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dil Mein Jaagi</title>
-      <link>http://harshad.me/posts/dil-mein-jagi/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/dil-mein-jagi/</guid>
-      <description>Dil mein jaagi is a beautiful composition by Amit Trivedi. Check out the original song here. However, it has been highly under noticed. My wife Rithisha (who is an amazing singer() btw) and I decided to give this song a shot. What started as just a jam back in 2016 summer, ended up becoming a full fledged performance. All thanks to Rithisha, Shardul, Rucha and Vaishnavh for their amazing contributions.</description>
-    </item>
-    
-    <item>
-      <title>Rehna Tu</title>
-      <link>http://harshad.me/posts/rehna-tu/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/rehna-tu/</guid>
-      <description> Rehna Tu is originally a song from movie Delhi 6. We interpreted it very differently and here&amp;#39;s our take on it.
-Links to this note </description>
-    </item>
-    
-    <item>
-      <title>Yaava Mohana</title>
-      <link>http://harshad.me/posts/yaava-mohana/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/yaava-mohana/</guid>
-      <description> This is a really beautiful Kannada composition! I fell in love with it the first time I heard it. Do listen :)
-Links to this note </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>music on harshad</title>
+		<link>https://www.harshad.me/tags/music/</link>
+		<description>Recent content in music </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/music) (Harshad Shirwadkar)</managingEditor>
+    	
+  		<lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/music/" rel="self" type="application/rss+xml" />
+		
+	</channel>
 </rss>

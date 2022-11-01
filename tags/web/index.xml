@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>web on Harshad</title>
-    <link>http://harshad.me/tags/web/</link>
-    <description>Recent content in web on Harshad</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://harshad.me/tags/web/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Org mode and orgzly</title>
-      <link>http://harshad.me/posts/org-and-orgzly/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/org-and-orgzly/</guid>
-      <description>When I first heard of org-mode, I thought org-mode, like any other task management app, would just work out of the box and be my task management planner inside emacs. But, I was so wrong. Org-mode is so much more than that. Instead of thinking of org-mode as a &amp;#34;plug-and-play task management software&amp;#34;, one should think of org mode as a toolset for building their own personal knowledge management system.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>web on harshad</title>
+		<link>https://www.harshad.me/tags/web/</link>
+		<description>Recent content in web </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/web) (Harshad Shirwadkar)</managingEditor>
+    	
+  		<lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/web/" rel="self" type="application/rss+xml" />
+		
+	</channel>
 </rss>

@@ -1,58 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tech on Harshad</title>
-    <link>http://harshad.me/tags/tech/</link>
-    <description>Recent content in tech on Harshad</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://harshad.me/tags/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pin</title>
-      <link>http://harshad.me/posts/pin/</link>
-      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/pin/</guid>
-      <description>Anyone who works in a field related to computer software, ends up running a bunch of CLI (command line interface) commands pretty often. The longer you stay in the field, the larger is your command set. With new systems being invented everyday, the complexity of commands being run is also increasing. Day by day, I am finding myself running more and more complex commands. That&amp;#39;s when I decided I need something to manage these commands for me.</description>
-    </item>
-    
-    <item>
-      <title>Quick emacs&#43;cscope hack for broken symlinks</title>
-      <link>http://harshad.me/posts/quick-cscope-emacs-hack/</link>
-      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/quick-cscope-emacs-hack/</guid>
-      <description>I use cscope in emacs as my primary code browsing tool for Linux kernel development. However, I started to get annoyed by cscope errors for broken symlinks. What is happening is that during the Linux kernel build process, a few symlinks get created which are not needed once the kernel is built. I presume that the build tooling doesn&amp;#39;t clean up these symlinks after they are removed and that confuses the cscope program.</description>
-    </item>
-    
-    <item>
-      <title>Static Website with Password Protection</title>
-      <link>http://harshad.me/posts/static-website/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/static-website/</guid>
-      <description>After numerous attempts at finding a cheap and easy solution to making a password protected static website, I finally have settled my mind on one! Before going over the solution let me go over the requirements that I had in my mind for the website:
-Cheap Static and blog-aware Password protection on a part of the website Smooth and easy workflow to move content from private part to public Preferably, an automatic CI/CD I tried multiple solutions such as setting up Heroku dynos, CloudCanon etc.</description>
-    </item>
-    
-    <item>
-      <title>Organizing Song chords</title>
-      <link>http://harshad.me/posts/writing-music-chords/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/writing-music-chords/</guid>
-      <description>I often struggled to keep chords for songs I played in a handy place. For a couple of years I have been maintaining chords in a Google Doc. Given the forgetful person that I&amp;#39;m, storing all the chords in one place has come as a blessing. Having all the chords in one place has helped me to be more organized about my music. It has helped me collaborate better with other musicians.</description>
-    </item>
-    
-    <item>
-      <title>Old Website Index Page</title>
-      <link>http://harshad.me/posts/old-github-index/</link>
-      <pubDate>Mon, 07 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/old-github-index/</guid>
-      <description>I am a Graduate Student at Carnegie Mellon University. My main research interests are Networks, Internet Architecture, CCN; also I am interested in Storage, Operating Systems. Recently, I have have started loving Probability. Thanks to Prof. Mor Harchol-Balter. Advised by Prof. Peter Steenkiste, I work on a future internet architecture project called eXpressive Internet Architecture(XIA) at Carnegie Mellon.
-Before CMU Before coming to Carnegie Mellon, I was working as a device driver developer at AirTight Networks.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>tech on harshad</title>
+		<link>https://www.harshad.me/tags/tech/</link>
+		<description>Recent content in tech </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/tech) (Harshad Shirwadkar)</managingEditor>
+    	
+  		<lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/tech/" rel="self" type="application/rss+xml" />
+		
+	</channel>
 </rss>

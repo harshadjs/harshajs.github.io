@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>kernel on Harshad</title>
-    <link>http://harshad.me/tags/kernel/</link>
-    <description>Recent content in kernel on Harshad</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://harshad.me/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Quick emacs&#43;cscope hack for broken symlinks</title>
-      <link>http://harshad.me/posts/quick-cscope-emacs-hack/</link>
-      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://harshad.me/posts/quick-cscope-emacs-hack/</guid>
-      <description>I use cscope in emacs as my primary code browsing tool for Linux kernel development. However, I started to get annoyed by cscope errors for broken symlinks. What is happening is that during the Linux kernel build process, a few symlinks get created which are not needed once the kernel is built. I presume that the build tooling doesn&amp;#39;t clean up these symlinks after they are removed and that confuses the cscope program.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>kernel on harshad</title>
+		<link>https://www.harshad.me/tags/kernel/</link>
+		<description>Recent content in kernel </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/kernel) (Harshad Shirwadkar)</managingEditor>
+    	
+  		<lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/kernel/" rel="self" type="application/rss+xml" />
+		
+	</channel>
 </rss>

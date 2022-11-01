@@ -1,151 +1,205 @@
 <!DOCTYPE html>
-<html lang="en-us" prefix="og: http://ogp.me/ns#" id="top-of-site">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+<title>Search</title>
+<meta name="description" 
+      content="test"
+>
 
-    <link rel="canonical" href="http://harshad.me/search/">
-
-    <title>Search - Harshad</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <meta name="author" content="">
-    <meta name="generator" content="Hugo 0.104.3" />
-
-    
-    <link crossorigin="anonymous" href="/css/stylesheet.min.ddff76a17889e714853ced93d59096be3dca89927ec0e446c2d9c6b70da094a6.css" integrity="sha256-3f92oXiJ5xSFPO2T1ZCWvj3KiZJ+wORGwtnGtw2glKY=" rel="preload stylesheet" as="style">
-
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest" title="Manifest">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
-    <link rel="author" type="text/plain" href="/humans.txt" title="Humans">
+  
 
 
-    <meta name="theme-color" content="#ffffff">    
-    <meta property="og:title" content="Search - Harshad">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://harshad.me/search/">
-    <meta property="og:image" content="http://harshad.me/img/open-graph-logo.png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    
-    <meta name="twitter:title" content="Search - Harshad">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://harshad.me/img/open-graph-logo.png">
-    
 
-<script type="application/ld+json" id="schema-data">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http://harshad.me/search/"
-        },
-        "url": "http://harshad.me/search/",
-        "headline": "Search - Harshad",
-        "description": "",
-        "keywords": [],
-        "datePublished": "0001-01-01T00:00:00Z",
-        "dateModified": "0001-01-01T00:00:00Z",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Harshad",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "http://harshad.me/img/open-graph-logo_hu649006a96c7f6a02c0a48e2d90a9a7b0_5229_96x96_resize_box_3.png",
-                "width": "96",
-                "height": "96"
-            }
-        }
-    }
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://www.harshad.me/index.xml"
+  title="harshad"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Search"/>
+<meta name="twitter:description" content=""/>
+
+
+
+<link rel="stylesheet" href="https://www.harshad.me/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+
+
+<link
+  id="dark-mode-theme"
+  crossorigin="anonymous"
+  href="/css/dark.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
 </script>
 
 
-
-    <script src="/js/common.js"></script>
-</head>
-
-    <body class="theme-base-">
-        <div id="top-of-site-anchor"></div>
-        
-            
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<script defer crossorigin="anonymous" src="/js/theme.js" integrity=""></script>
 
 
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-item">
-        <p></p>
-    </div>
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script>
+  <script defer crossorigin="anonymous" src="/js/flexsearch.bundle.js" integrity=""></script>
 
-    <nav class="sidebar-nav">
-            <a class="sidebar-nav-item"
-                href="/posts/"
-                id="menu-main-posts">Posts</a>
-            <a class="sidebar-nav-item"
-                href="/music/"
-                id="menu-main-music">Music</a>
-            <a class="sidebar-nav-item"
-                href="/contact/"
-                id="menu-main-contact">Contact</a>
-            <a class="sidebar-nav-item active"
-                href="/search/"
-                id="menu-main-search">Search</a>
-            <a class="sidebar-nav-item"
-                href="/about/"
-                id="menu-main-about">About</a>
-        <span class="hypothesis-container">
-    <a class="sidebar-nav-item" id="hypothesis-link" href="#">Annotate me</a>
-</span>
+  
+  
 
-    </nav>
+  
+  
+  <script defer crossorigin="anonymous" src="/js/en.search.6287243e3872211df3528a6d4b1b08a957885aba553a411dd1098b3ab5f20fa4.js" integrity="sha256-YockPjhyIR3zUoptSxsIqVeIWrpVOkEd0QmLOrXyD6Q="></script><meta name="generator" content="Hugo 0.105.0">
+  </head>
+  <body>
+    
+  
 
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://www.harshad.me/" class="nav-logo">
+        <img
+          src="https://www.harshad.me/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
     
 
-</aside>
-
+    <ul class="nav-links">
+      
         
-        <div class="wrap">
-            <header class="masthead">
-                <div class="container">
-                    <h3 class="masthead-title">
-                        <a href="/" title="Home">Harshad</a>
-                        <br><small></small>
-                    </h3>
-                </div>
-            </header>
-
-            <main class="container content" id="main">
-                <article class="page" role="document">
-    <header>
-        <h1 class="text-title">
-            Search
-        </h1>
-    </header>
-
-    <div class="page-body">
+          <li>
+            <a href="/posts/" id="~/"
+              ><em class="fas fa-home fa-lg"></em
+            ></a>
+          </li>
+          
+      
         
-    </div>
-</article>
+          <li>
+            <a href="/music/" id="Music"
+              ><em class="fas fa-music fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags/" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search/" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
 
-            </main>
+    <div class="intro-header">
+      <div class="container">
+        <div class="page-heading">
+          
+            <h1>
+              Search
+            </h1>
+          
+          
         </div>
+      </div>
+    </div>
+  </header>
+  
 
-        <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+  <div class="searchBoxContainer">
+    <input
+      type="text"
+      id="searchBox"
+      class="searchBox"
+      placeholder="Search..."
+    />
+  </div>
+  <div id="searchResults" class="searchResults"></div>
+    <footer>
+  
 
-        <a href="#top-of-site" class="top-of-site-link" data-visible="false">
-            <span class="screen-reader-text" aria-label="Back to top of the page">
-                Back to top
-            </span>
-            <svg width="32" height="32" viewBox="0 0 100 100">
-                <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
-            </svg>
-        </a>
-    </body>
+<div class="social-icons">
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://www.harshad.me/about">Harshad Shirwadkar</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://www.harshad.me/">harshad</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
 </html>
