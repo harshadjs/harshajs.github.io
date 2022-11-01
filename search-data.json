@@ -5,26 +5,6 @@
         
             {
                 "id": 0,
-                "href": "https://www.harshad.me/posts/org-and-orgzly/",
-                "title": "Org mode and orgzly",
-                "section": "posts",
-                "date" : "2021.01.06",
-                "body": " When I first heard of org-mode, I thought org-mode, like any other task management app, would just work out of the box and be my task management planner inside emacs. But, I was so wrong. Org-mode is so much more than that. Instead of thinking of org-mode as a \u0026#34;plug-and-play task management software\u0026#34;, one should think of org mode as a toolset for building their own personal knowledge management system.\nThere are many interesting articles on the internet about what is org-mode and how should it be used. Readers who are not familiar with org mode, should checkout org-mode\u0026#39;s official website.\nFile Organization I keep my org files in ~/org folder. The following table describes various subfolders and files in ~/org folder.\nPath Meaning ~/org/archives/ Folder containing archived org notes ~/org/projects/ Folder containing project specific notes ~/org/journal/ Folder containing journal entries ~/org/scribble.org Org file containing un-organized notes / tasks ~/org/work.org Org file containing organized work related items ~/org/personal.org Org file containing organized personal items ~/org/lists.org Org file containing various lists (such movies to watch, travel lists etc) Syncing and Backup Git is great for maintaining backup, but it\u0026#39;s not great for on-the-fly syncing across multiple devices. On the other hand, services like google-drive or dropbox are great for syncing but aren\u0026#39;t too great for backups. So, I use git for backups and google-drive for syncing. This ~/org folder is essentially a clone of a GitHub private repository and it is also configured as a folder that should continuously synchronize with a folder on Google drive.\nHowever, there\u0026#39;s one catch. Backing up your .git folder on google drive or dropbox is not a great idea. Imagine what would happen if two computers are run git commands on this folder simultaneously. Also, backing up .git on google drive / dropbox generates unnecessary upload / download traffic for google drive / dropbox. So, instead what I do is that inside ~/org folder, I created a symlink called .git which points to \u0026#34;~/dot-gits/org\u0026#34;. So, instead of backing up the entire git folder to google drive, I only backup a symlink which I can use on different computers to point to local git folders.\nThis setup allows me to backup org files on GitHub and also continuously sync them across different computers. Links to this note "
-            }
-    
-        ,
-            {
-                "id": 1,
-                "href": "https://www.harshad.me/posts/pin/",
-                "title": "Pin",
-                "section": "posts",
-                "date" : "2020.12.21",
-                "body": " Anyone who works in a field related to computer software, ends up running a bunch of CLI (command line interface) commands pretty often. The longer you stay in the field, the larger is your command set. With new systems being invented everyday, the complexity of commands being run is also increasing. Day by day, I am finding myself running more and more complex commands. That\u0026#39;s when I decided I need something to manage these commands for me. Shell history is great, but it is not portable and reliable. So, I have built pin, a portable commands organizer. Pin is available for use at https://github.com/harshadjs/pin. In this post, I\u0026#39;ll go over some of the key design choices I made while building this tool.\nPortability and the Ease of First Use I often run complex commands on resource constrained or ill configured environments which don\u0026#39;t retain any state (ephemeral VMs) or minimalstic chrooted environments - such as a custom kernel running with minimal debian image with no network configuration under qemu virtualization. This often means installing a collection of libraries and dependencies is not feasible / convenient. Therefore, the primary goals I had in my mind while designing pin were portability and the ease of first use.\nSo, given the above constraints, how does pin provide ease of first use and portability?\nPin is just one shell script that relies on very basic shell programs (such as base64 or sha1sum) for doing most of its work. Therefore, pin can be run in almost any environment where you have shell access; and given that you are trying to remember your shell commands, you … well - do have shell access.\nThis makes pin installation a very simple process. Just use wget or curl to download pin script and you are all set to use it! For environments where internet connectivity is not available (often inside qemu while testing custom kernel), you can still paste the compressed and base64 encoded version of the pin script, which gets decompressed and decoded by simple shell commands allowing you to use pin.\nSelf Identifying Objects Another design choice that I made was to store commands as files in the following format which are named as the SHA1 hash of the command (CMD) itself:\nCMD=\u0026#34;\u0026lt;base64 encoding of \u0026#34;find . -type f -iname *.[ch] | etags -\u0026#34;\u0026gt;\u0026#34; DESC=\u0026#34;Generate emacs tags\u0026#34; TYPE=cmd This implies that there\u0026#39;s inherent dedpulication of all the commands stored in pin. Also, self-identification of the object prevents accidental overwrites of command files.\nOutput Caching Lastly, even though shell is very portable and requires the least number of dependencies in order to be used, it is definitely slower compared to say - a python script or a C/C++ compiled program. Since in the write path, pin mostly performs writes or updates to fixed set of files, the slowness of shell doesn\u0026#39;t affect the write path much.\nHowever, there\u0026#39;s a slight impact on the read path. For example, the pin grep command which searches for occurence of a term in the database of commands (which are base64 encoded) can be slow if the number of commands is very high. In order to deal with this problem, pin implements output caching which allows it to significantly reduce read path latencies. pin stores output of grep queries in /tmp folder. There\u0026#39;s some more work needed to maintain and perhaps configure the size of the cache, but in my experience, the number of such commands that I run in a reboot cycle has not resulted in any significant bloating of the cache.\nLinks to this note "
-            }
-    
-        ,
-            {
-                "id": 2,
                 "href": "https://www.harshad.me/posts/quick-cscope-emacs-hack/",
                 "title": "Quick emacs+cscope hack for broken symlinks",
                 "section": "posts",
@@ -34,7 +14,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 1,
                 "href": "https://www.harshad.me/posts/static-website/",
                 "title": "Static Website with Password Protection",
                 "section": "posts",
@@ -44,7 +24,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 2,
                 "href": "https://www.harshad.me/posts/writing-music-chords/",
                 "title": "Organizing Song chords",
                 "section": "posts",
@@ -54,7 +34,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 3,
                 "href": "https://www.harshad.me/posts/dil-mein-jagi/",
                 "title": "Dil Mein Jaagi",
                 "section": "posts",
@@ -64,7 +44,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 4,
                 "href": "https://www.harshad.me/posts/rehna-tu/",
                 "title": "Rehna Tu",
                 "section": "posts",
@@ -74,7 +54,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 5,
                 "href": "https://www.harshad.me/posts/yaava-mohana/",
                 "title": "Yaava Mohana",
                 "section": "posts",
@@ -84,19 +64,9 @@
     
         ,
             {
-                "id": 8,
-                "href": "https://www.harshad.me/posts/old-github-index/",
-                "title": "Old Website Index Page",
-                "section": "posts",
-                "date" : "2014.04.07",
-                "body": " I am a Graduate Student at Carnegie Mellon University. My main research interests are Networks, Internet Architecture, CCN; also I am interested in Storage, Operating Systems. Recently, I have have started loving Probability. Thanks to Prof. Mor Harchol-Balter. Advised by Prof. Peter Steenkiste, I work on a future internet architecture project called eXpressive Internet Architecture(XIA) at Carnegie Mellon.\nBefore CMU Before coming to Carnegie Mellon, I was working as a device driver developer at AirTight Networks. I worked on various 802.11 Atheros chipset drivers for Linux such as: ar5416, ar9300.\nIn my final year undergraduate project and as a part of Google Summer of Code, 2011, I worked on enhancing Ext4 file system to avail snapshotting feature. I was advised by Amir Goldstein who was the prinicipal investigator of that project.\nMusic In my free time, I play piano. I love to collaborate with musicians from various backgrounds. I currently own a YAMAHA P-105 digital piano. Please find some of my tracks (covers and compositions) on my music page.\nArch I use Arch Linux and The Arch Way is why I do it. Here is a snippet from The Arch FAQ.\nWhy would I not want to use Arch? You may not want to use Arch, if:\nafter reading The Arch Way, you disagree with the philosophy. you do not have the ability/time/desire for a \u0026#39;do-it-yourself\u0026#39; GNU/Linux distribution. you require support for an architecture other than x86_64 or i686. you take a strong stand on using a distribution which only provides free software as defined by GNU. you believe an operating system should configure itself, run out of the box, and include a complete default set of software and desktop environment on the installation media. you do not want a bleeding edge, rolling release GNU/Linux distribution. you are happy with your current OS. you want an OS that targets a different userbase. My Arch configuration is available on my GitHub repository dot-files. Links to this note "
-            }
-    
-        ,
-            {
-                "id": 9,
+                "id": 6,
                 "href": "https://www.harshad.me/about/",
-                "title": "",
+                "title": "About Me",
                 "section": "",
                 "date" : "0001.01.01",
                 "body": " Harshad Shirwadkar Seattle, WA Hi! I'm Harshad. I live in the beautiful city of Seattle and work for Google. As a part of my work and as a hobby, I contribute to the development of upstream Linux kernel. Here are the patches that I have contributed to the Linux Kernel. I also like to play piano. Please check my music page for my collaborations with other musicians. Projects Ext4 Fast Commits Google 2019 - 2020 Worked on adding a new journalling scheme for Ext4 file system that improves Ext4 performance in data=ordered mode. These patches are merged into upstream linux kernel.\nExt4 Freespace Trees Google Summer 2020 Mentored an intern and later enhanced their work to add a free space tree based allocator for Ext4 file system. The patches are in review.\nThe Web in the Face of Future Internet Architectures Carnegie Mellon University 2015-2016 Improving HTTP/HTTPS by leveraging Content Addressability of eXpressive Internet Architecture(XIA), an inter- net architecture proposed by CMU to natively support Evolvability and Information Centric Networking principles. Also designed and implemented caching service, reliable transport and content distribution for XIA Network Stack.\nPebblesOS - a UNIX like operating system Carnegie Mellon University 2015 As a part of Operating Systems Course (15-415) at CMU, wrote a unix-like operating system from scratch. PebblesOS boots in VirtualBox and has a default shell implemented. Code can be made available upon request.\nNext4 - Snapshots support for Ext4 file system Pune Institute of Computer Technology 2010 - 2011 Designed and implemented Read-only Snapshots for Ext4 file system\nExperience Google Senior Software Engineer 2016 - Present I am a part of Google\u0026rsquo;s storage team responsible for developing low level software including file systems, block layer features for Google\u0026rsquo;s production servers and GCP.\nCarnegie Mellon University Graduate Student Researcher 2015 - 2016 Worked with eXpressive Internet Architecture team at CMU on various Network and Transport layer issues in XIA Network Stack.\nAirTight Networks Senior Software Engineer 2011 - 2014 Worked on various driver level and application level features for Wi-Fi access points and WIPS (Wireless Intrusion Prevention Systems)\nContent Analytics - In driver connection tracker and HTTP/HTTPS parser ARP spoofer - Driver level ARP spoofer for WIPS Wireless Event Handler - Designed and implemented a inter-module communication framework based on UNIX sockets for AirTight AP Bandwidth Control - Designed and implemented bandwidth control feature for AirTight AP Debugged critical field issues in Wi-Fi driver and host ap daemon. Google Summer of Code Student Software Developer 2011 Designed and implemented Snapshot revert feature for Next4 file system.\nEducation Carnegie Mellon University Master's in Information Networking 2014-2016 Courses: OS Design and Implementation (15-415), Computer Networking (15-551), Probability and Computing (15-359), Storage Systems (18-746) Pune University of Computer Technology Bachelor's in Computer Engineering 2011-2014 "
@@ -104,7 +74,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 7,
                 "href": "https://www.harshad.me/contact/",
                 "title": "Contact Me",
                 "section": "",
@@ -114,7 +84,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 8,
                 "href": "https://www.harshad.me/music/",
                 "title": "Music",
                 "section": "",

@@ -3,39 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.harshad.me/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/org/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/org-and-orgzly/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/web/</loc>
-    <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/jekyll/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/pin/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/tech/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.harshad.me/tags/kernel/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.harshad.me/posts/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.harshad.me/posts/quick-cscope-emacs-hack/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.harshad.me/tags/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.harshad.me/tags/tech/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.harshad.me/tags/git/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.harshad.me/tags/jekyll/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.harshad.me/posts/static-website/</loc>
@@ -59,11 +47,7 @@
     <loc>https://www.harshad.me/posts/yaava-mohana/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/posts/old-github-index/</loc>
-    <lastmod>2014-04-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.harshad.me/about/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>https://www.harshad.me/categories/</loc>
   </url><url>
