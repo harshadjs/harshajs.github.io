@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Tags on Harshad Shirwadkar</title>
-		<link>https://www.harshad.me/tags/</link>
+		<title>Tags on  </title>
+		<link>/tags/</link>
 		<description>Recent content in Tags </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
@@ -9,7 +9,7 @@
 		
 		<managingEditor>Page(/tags) (Harshad Shirwadkar)</managingEditor>
     	
-  		<lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
+  		<lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
 		
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		

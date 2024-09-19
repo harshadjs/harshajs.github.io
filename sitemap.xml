@@ -2,63 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.harshad.me/</loc>
+    <loc>/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/excerpts/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/luck_and_risk/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/category/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/emacs/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/emacs_on_android/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/list/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/org_roam/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tag/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/music/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/org_mode/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/literate_programming/</loc>
+    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/tmux-config/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/termux-setup/</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/configuration/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/kernel/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/tags/kernel/</loc>
+    <loc>/posts/quick-cscope-emacs-hack/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/posts/</loc>
+    <loc>/tags/tech/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/posts/quick-cscope-emacs-hack/</loc>
-    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/</loc>
-    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/tech/</loc>
-    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/git/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/jekyll/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/static-website/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/tags/website/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/writing-music-chords/</loc>
+    <loc>/posts/writing-music-chords/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/categories/</loc>
+    <loc>/categories/covers/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/categories/covers/</loc>
+    <loc>/posts/dil-mein-jagi/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/posts/dil-mein-jagi/</loc>
+    <loc>/tags/music/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/tags/music/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.harshad.me/posts/rehna-tu/</loc>
+    <loc>/posts/rehna-tu/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/posts/yaava-mohana/</loc>
+    <loc>/posts/yaava-mohana/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.harshad.me/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>https://www.harshad.me/contact/</loc>
+    <loc>/about2/</loc>
   </url><url>
-    <loc>https://www.harshad.me/music/</loc>
+    <loc>/contact/</loc>
   </url><url>
-    <loc>https://www.harshad.me/search/</loc>
+    <loc>/graph/</loc>
+  </url><url>
+    <loc>/search/</loc>
   </url>
 </urlset>

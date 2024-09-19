@@ -2,7 +2,10 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-<title>Organizing Song chords</title>
+<title>
+
+Organizing Song chords
+</title>
 <meta name="description" 
       content=""
 >
@@ -26,15 +29,15 @@
 <link
   rel="alternate"
   type="application/rss+xml"
-  href="https://www.harshad.me/index.xml"
-  title="Harshad Shirwadkar"
+  href="/index.xml"
+  title=" "
 />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Organizing Song chords"/>
 <meta name="twitter:description" content="I often struggled to keep chords for songs I played in a handy place."/>
 
 
 
-<link rel="stylesheet" href="https://www.harshad.me/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/fontawesome/css/all.min.css" />
 
 
 
@@ -75,7 +78,7 @@
 <script defer crossorigin="anonymous" src="/js/theme.js" integrity=""></script>
 
 
-<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.121.2">
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.124.1">
   </head>
   <body>
     
@@ -83,14 +86,13 @@
 
 
 
-
   <header>
     <nav class="navbar">
   <div class="nav">
     
-      <a href="https://www.harshad.me/" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img
-          src="https://www.harshad.me/images/home.png"
+          src="/images/home.png"
           width="50"
           height="50"
           alt="Logo"
@@ -102,8 +104,8 @@
       
         
           <li>
-            <a href="/music/" id="Music"
-              ><em class="fas fa-music fa-lg"></em
+            <a href="/graph/" id="Graph"
+              ><em class="fas fa-book fa-lg"></em
             ></a>
           </li>
           
@@ -138,12 +140,23 @@
 
     <div class="intro-header">
       <div class="container">
-        <div class="posts-heading">
+        <div class="post-heading">
           
             <h1>
               Organizing Song chords
             </h1>
           
+            
+            <span class="meta-post">
+  
+    Created:
+    May 1 2020,
+  Modified: May 1 2020
+  
+
+  
+</span>
+
           
         </div>
       </div>
@@ -152,42 +165,37 @@
   
 
     
-  <div class="container" role="main">
+<div class="container" role="main">
     <article class="article" class="blog-post">
       
   
 <p>
-I often struggled to keep chords for songs I played in a handy
-place. For a couple of years I have been maintaining chords in a
-Google Doc. Given the forgetful person that I&#39;m, storing all the
-chords in one place has come as a blessing. Having all the chords in
-one place has helped me to be more organized about my music. It has
-helped me collaborate better with other musicians.</p>
+I often struggled to keep chords for songs I played in a handy place. For a couple of years
+I have been maintaining chords in a Google Doc. Given the forgetful person that I&#39;m, storing
+all the chords in one place has come as a blessing. Having all the chords in one place has
+helped me to be more organized about my <a href="/posts/music/">music</a>. It has helped me collaborate better with
+other musicians.</p>
 <p>
-However, using Google Docs for organizing chords has not since scaled
-as I added more and more songs. Besides, I was maintaining all the
-chords in one file. Maybe having individual files would have helped
-the cause but it was nowhere close to what for example <a href="https://tabs.ultimate-guitar.com/tab/bryan-adams/summer-of-69-chords-843137">UltimateGuitar
-provides</a>.</p>
+However, using Google Docs for organizing chords has not since scaled as I added more and
+more songs. Besides, I was maintaining all the chords in one file. Maybe having individual
+files would have helped the cause but it was nowhere close to what for example
+<a href="https://tabs.ultimate-guitar.com/tab/bryan-adams/summer-of-69-chords-843137">UltimateGuitar provides</a>.</p>
 <p>
-I have since migrated all the chords from the google doc onto my
-personal website where I write song chords in plain text format (in
-org-mode files) and using Hugo&#39;s magic shortcodes to detect chords and
-present them in a way such that it is easy to follow.</p>
+I have since migrated all the chords from the google doc onto my personal website where I
+write song chords in plain text format (in org-mode files) and using Hugo&#39;s magic shortcodes
+to detect chords and present them in a way such that it is easy to follow.</p>
 <p>
-This has worked wonders for me and this post is meant to give a high
-level idea of how you can use <code class="verbatim">Hugo</code> shortcodes, to organize and
-present chords for your songs!</p>
+This has worked wonders for me and this post is meant to give a high level idea of how you
+can use <code class="verbatim">Hugo</code> shortcodes, to organize and present chords for your songs!</p>
 <div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 Hugo Short Code for Chords
 </h3>
 <div id="outline-text-headline-1" class="outline-text-3">
 <p>
-   I defined a new short code called <code class="verbatim">chords</code> to define the section
-   of a post where song chords are found. What this shortcodee does is
-   that it recognizes all the chords in its content using the
-   following regular expression:</p>
+   I defined a new short code called <code class="verbatim">chords</code> to define the section of a post where song
+   chords are found. What this shortcodee does is that it recognizes all the chords in its
+   content using the following regular expression:</p>
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[A-G][b#]?((b|maj|add|m|sus|dim|aug)*[0-9]*)*[^\\w]</span></span></code></pre></div>
 </div>
@@ -199,24 +207,22 @@ Marking Chords in Markdown
 </h3>
 <div id="outline-text-headline-2" class="outline-text-3">
 <p>
-I defined a new <code class="verbatim">&lt;chords&gt;</code> tag (note that this is not a HTML tag) as a way to
-indicate that all the content following this tag should be rendered as
-chords. This is ugly but it works for my usecase. Chords marker makes Liquid
-templating language use a <code class="verbatim">&lt;pre&gt;</code> with a CSS class for all the content that
-follows. As you will see in the following section, it&#39;s <strong><strong>critical</strong></strong> that you
-use monospace font for rendering this =&lt;pre&gt;=formatted text in order to maintain
+I defined a new <code class="verbatim">&lt;chords&gt;</code> tag (note that this is not a HTML tag) as a way to indicate that
+all the content following this tag should be rendered as chords. This is ugly but it works
+for my usecase. Chords marker makes Liquid templating language use a <code class="verbatim">&lt;pre&gt;</code> with a CSS class
+for all the content that follows. As you will see in the following section, it&#39;s <strong><strong>critical</strong></strong>
+that you use monospace font for rendering this =&lt;pre&gt;=formatted text in order to maintain
 the mapping of where chords change according to lyrics.</p>
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;chords&gt;
 </span></span><span style="display:flex;"><span>   I got my first real six-string,   Bought it at the five-and-dime</span></span></code></pre></div>
 </div>
 <p>
-The next step is to write chords for the songs. I first place chords
-just above the lyrics where the chords change and then annotate (and
-differentiate) chords (from lyrics) by placing them in square
-brackets.  Square brackets encountered after <code class="verbatim">&lt;chords&gt;</code> tag tell
-Liquid templating language that these are chords and should have a
-special css style assigned to it.</p>
+The next step is to write chords for the songs. I first place chords just above the lyrics
+where the chords change and then annotate (and differentiate) chords (from lyrics) by
+placing them in square brackets.  Square brackets encountered after <code class="verbatim">&lt;chords&gt;</code> tag tell Liquid
+templating language that these are chords and should have a special css style assigned to
+it.</p>
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;chords&gt;
 </span></span><span style="display:flex;"><span>[D                                  A]
@@ -267,12 +273,11 @@ JS Tricks
 </h3>
 <div id="outline-text-headline-4" class="outline-text-3">
 <p>
-I also have added a few Javascript tricks to implement some interesting
-functions such as <code class="verbatim">Transpose</code> and <code class="verbatim">Auto-scroll</code> which I first found on
-UltimateGuitar. These functions come very handy! For those who are interested
-here&#39;s how the JS code for each look like. Just place these in the appropriate
-location (right before the <code class="verbatim">{ { content_split[0] } }</code> line) in the above
-template.</p>
+I also have added a few Javascript tricks to implement some interesting functions such as
+<code class="verbatim">Transpose</code> and <code class="verbatim">Auto-scroll</code> which I first found on UltimateGuitar. These functions come very
+handy! For those who are interested here&#39;s how the JS code for each look like. Just place
+these in the appropriate location (right before the <code class="verbatim">{ { content_split[0] } }</code> line) in the
+above template.</p>
 <div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
 Auto-scroll
@@ -349,12 +354,7 @@ Transpose
 </span></span><span style="display:flex;"><span>      &lt;button onclick=&#34;transpose(0);&#34;&gt;-1&lt;/button&gt;</span></span></code></pre></div>
 </div>
 <p>
-Have fun adding chords to your blog!
-
-
-<style> .backlinks {  background-color: lightcyan; } </style>
-
-</p>
+Have fun adding chords to your blog!</p>
 </div>
 </div>
 </div>
@@ -367,18 +367,17 @@ Links to this note
 
 
 
-
       
         <div class="blog-tags">
           
             <a
-              href="https://www.harshad.me/tags/tech/"
+              href="/tags/tech/"
               >tech</a
             >&nbsp;
           
             <a
-              href="https://www.harshad.me/tags/jekyll/"
-              >jekyll</a
+              href="/tags/hugo/"
+              >hugo</a
             >&nbsp;
           
         </div>
@@ -389,31 +388,6 @@ Links to this note
     
     
       
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-        (function() {
-            
-            
-            if (window.location.hostname == "localhost") return;
-
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            var disqus_shortname = 'http-harshadjs-github-io';
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-  <noscript
-    >Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript"
-      >comments powered by Disqus.</a
-    ></noscript
-  >
-  <a href="https://disqus.com/" class="dsq-brlink"
-    >comments powered by <span class="logo-disqus">Disqus</span></a
-  >
-
 
     
   </div>
@@ -449,12 +423,12 @@ Links to this note
   
   <div class="container">
     <p class="credits copyright">
-      <a href="https://www.harshad.me/about">Harshad Shirwadkar</a>
+      <a href="/about">Harshad Shirwadkar</a>
       &nbsp;&copy;
-      2020
+      2024
       
         &nbsp;/&nbsp;
-        <a href="https://www.harshad.me/">Harshad Shirwadkar</a>
+        <a href="/"> </a>
       
       &nbsp;&ndash;&nbsp;
       <em class="fas fa-moon" id="dark-mode-toggle"></em>
