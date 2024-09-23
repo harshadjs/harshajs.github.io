@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/generate_digital_garden/</loc>
+    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/excerpts/</loc>
     <lastmod>2024-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/luck_and_risk/</loc>
-    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2024-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
@@ -94,8 +97,6 @@
     <loc>/about2/</loc>
   </url><url>
     <loc>/contact/</loc>
-  </url><url>
-    <loc>/posts/generate_digital_garden/</loc>
   </url><url>
     <loc>/dg_index/</loc>
   </url><url>
