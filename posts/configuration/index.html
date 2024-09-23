@@ -105,6 +105,14 @@ emacs config
         
           <li>
             <a href="/graph/" id="Graph"
+              ><em class="fas fa-share fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/dg_index/" id="index"
               ><em class="fas fa-book fa-lg"></em
             ></a>
           </li>
@@ -177,13 +185,15 @@ Org mode supports a feature called <a href="https://orgmode.org/worg/org-contrib
 code.</p>
 <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
-Create <code class="verbatim">~/.emacs</code> file
+One time setup
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
 <p>
 This step is only needed one time. Execute the following block once.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;(org-babel-load-file \&#34;</span><span style="color:#e6db74">${</span>PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">/configuration.org\&#34;)&#34;</span> &gt; ~/.emacs</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;(org-babel-load-file \&#34;</span><span style="color:#e6db74">${</span>PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">/configuration.org\&#34;)&#34;</span> &gt; ~/.emacs
+</span></span><span style="display:flex;"><span>mkdir -p ~/.emacs.d
+</span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/nobiot/md-roam/refs/heads/main/md-roam.el -P ~/.emacs.d/</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -1318,9 +1328,19 @@ tags when on android.</p>
 https://www.orgroam.com/manual.html#Configuring-what-is-displayed-in-the-buffer</p>
 <div id="outline-container-headline-44" class="outline-4">
 <h4 id="headline-44">
-Dailies
+Markdown
 </h4>
 <div id="outline-text-headline-44" class="outline-text-4">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-roam-file-extensions <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;org&#34;</span> <span style="color:#e6db74">&#34;md&#34;</span>))</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-45" class="outline-4">
+<h4 id="headline-45">
+Dailies
+</h4>
+<div id="outline-text-headline-45" class="outline-text-4">
 <p>
 Update as of [2023-09-14 Thu] - Well using dailies makes it really hard to search for past
 notes. I get a feeling that I have written something at some time, but scrolling by days is
@@ -1339,11 +1359,11 @@ as you launch emacs.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-45" class="outline-4">
-<h4 id="headline-45">
+<div id="outline-container-headline-46" class="outline-4">
+<h4 id="headline-46">
 Quick Insert Nodes
 </h4>
-<div id="outline-text-headline-45" class="outline-text-4">
+<div id="outline-text-headline-46" class="outline-text-4">
 <p>
 As opposed to <code class="verbatim">org-roam-node-insert</code>, this function allows you to insert a &#34;work&#34; node
 immediately without you having to break your writing. Just use a different key for this!
@@ -1364,11 +1384,11 @@ immediately without you having to break your writing. Just use a different key f
 </div>
 </div>
 </div>
-<div id="outline-container-headline-46" class="outline-4">
-<h4 id="headline-46">
+<div id="outline-container-headline-47" class="outline-4">
+<h4 id="headline-47">
 Find Nodes by Tag
 </h4>
-<div id="outline-text-headline-46" class="outline-text-4">
+<div id="outline-text-headline-47" class="outline-text-4">
 <div class="src src-elisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(defun hs/org-roam-find-by-tag ()
 </span></span><span style="display:flex;"><span>  (interactive)
@@ -1388,11 +1408,11 @@ Find Nodes by Tag
 </div>
 </div>
 </div>
-<div id="outline-container-headline-47" class="outline-4">
-<h4 id="headline-47">
+<div id="outline-container-headline-48" class="outline-4">
+<h4 id="headline-48">
 Roam buffer
 </h4>
-<div id="outline-text-headline-47" class="outline-text-4">
+<div id="outline-text-headline-48" class="outline-text-4">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(add-to-list <span style="color:#e6db74">&#39;display-buffer-alist</span>
 </span></span><span style="display:flex;"><span>             <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\*org-roam\\*&#34;</span>
@@ -1411,11 +1431,11 @@ Roam buffer
 </div>
 </div>
 </div>
-<div id="outline-container-headline-48" class="outline-4">
-<h4 id="headline-48">
+<div id="outline-container-headline-49" class="outline-4">
+<h4 id="headline-49">
 Roam UI
 </h4>
-<div id="outline-text-headline-48" class="outline-text-4">
+<div id="outline-text-headline-49" class="outline-text-4">
 <p>
 Configure Roam UI. It is dependent on <code class="verbatim">websocket</code> and <code class="verbatim">simple-httpd</code> so load them first.</p>
 <div class="src src-emacs-lisp">
@@ -1432,19 +1452,19 @@ Configure Roam UI. It is dependent on <code class="verbatim">websocket</code> an
 </div>
 </div>
 </div>
-<div id="outline-container-headline-49" class="outline-3">
-<h3 id="headline-49">
+<div id="outline-container-headline-50" class="outline-3">
+<h3 id="headline-50">
 Capture Templates
 </h3>
-<div id="outline-text-headline-49" class="outline-text-3">
+<div id="outline-text-headline-50" class="outline-text-3">
 <p>
 Function to return journaling prompts. This function returns a prompt
 from <code class="verbatim">base/public/templates/journaling-prompts</code> randomly.</p>
-<div id="outline-container-headline-50" class="outline-4">
-<h4 id="headline-50">
+<div id="outline-container-headline-51" class="outline-4">
+<h4 id="headline-51">
 Library
 </h4>
-<div id="outline-text-headline-50" class="outline-text-4">
+<div id="outline-text-headline-51" class="outline-text-4">
 <p>
 Defines following functions:</p>
 <p>
@@ -1479,11 +1499,11 @@ is not needed anymore with org-ai.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-51" class="outline-4">
-<h4 id="headline-51">
+<div id="outline-container-headline-52" class="outline-4">
+<h4 id="headline-52">
 Org mode capture templates
 </h4>
-<div id="outline-text-headline-51" class="outline-text-4">
+<div id="outline-text-headline-52" class="outline-text-4">
 <p>
 Capture templates are defined in <code class="verbatim">base/templates</code>.</p>
 <div class="src src-emacs-lisp">
@@ -1574,11 +1594,11 @@ Capture templates are defined in <code class="verbatim">base/templates</code>.</
 </div>
 </div>
 </div>
-<div id="outline-container-headline-52" class="outline-4">
-<h4 id="headline-52">
+<div id="outline-container-headline-53" class="outline-4">
+<h4 id="headline-53">
 Org roam capture templates
 </h4>
-<div id="outline-text-headline-52" class="outline-text-4">
+<div id="outline-text-headline-53" class="outline-text-4">
 <p>
 Update on [2024-04-01 Mon] - okay back to org-roam. I think emacs wins after all. Starting
 new team today, and want to go back to things that have worked well in the past.</p>
@@ -1598,6 +1618,9 @@ new team today, and want to go back to things that have worked well in the past.
 </span></span><span style="display:flex;"><span>	 :if-new (file <span style="color:#e6db74">&#34;~/base/work/org/docs/${slug}.org&#34;</span>)
 </span></span><span style="display:flex;"><span>	 :unnarrowed <span style="color:#66d9ef">t</span>)
 </span></span><span style="display:flex;"><span>	(<span style="color:#e6db74">&#34;wn&#34;</span> <span style="color:#e6db74">&#34;work note&#34;</span> plain (file <span style="color:#e6db74">&#34;~/base/public/templates/roam-note.capture&#34;</span>)
+</span></span><span style="display:flex;"><span>	 :if-new (file <span style="color:#e6db74">&#34;~/base/work/notes/${slug}.org&#34;</span>)
+</span></span><span style="display:flex;"><span>	 :unnarrowed <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>	(<span style="color:#e6db74">&#34;wm&#34;</span> <span style="color:#e6db74">&#34;work markdown note&#34;</span> plain (file <span style="color:#e6db74">&#34;~/base/work/templates/markdown.capture&#34;</span>)
 </span></span><span style="display:flex;"><span>	 :if-new (file <span style="color:#e6db74">&#34;~/base/work/notes/${slug}.org&#34;</span>)
 </span></span><span style="display:flex;"><span>	 :unnarrowed <span style="color:#66d9ef">t</span>)
 </span></span><span style="display:flex;"><span>	(<span style="color:#e6db74">&#34;wq&#34;</span> <span style="color:#e6db74">&#34;work question&#34;</span> plain (file <span style="color:#e6db74">&#34;~/base/public/templates/roam-question.capture&#34;</span>)
@@ -1627,11 +1650,11 @@ org roam discoverability.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-53" class="outline-3">
-<h3 id="headline-53">
+<div id="outline-container-headline-54" class="outline-3">
+<h3 id="headline-54">
 Custom ID Setter
 </h3>
-<div id="outline-text-headline-53" class="outline-text-3">
+<div id="outline-text-headline-54" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(defun hs/org-roam-set-id ()
 </span></span><span style="display:flex;"><span>  (interactive)
@@ -1649,11 +1672,11 @@ Custom ID Setter
 </div>
 </div>
 </div>
-<div id="outline-container-headline-54" class="outline-3">
-<h3 id="headline-54">
+<div id="outline-container-headline-55" class="outline-3">
+<h3 id="headline-55">
 Agenda Configuration
 </h3>
-<div id="outline-text-headline-54" class="outline-text-3">
+<div id="outline-text-headline-55" class="outline-text-3">
 <p>
 Following table describes how files are put into <code class="verbatim">org-agenda-files</code>:</p>
 <table>
@@ -1939,11 +1962,11 @@ Show habit consistency graphs.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-55" class="outline-3">
-<h3 id="headline-55">
+<div id="outline-container-headline-56" class="outline-3">
+<h3 id="headline-56">
 Clocking
 </h3>
-<div id="outline-text-headline-55" class="outline-text-3">
+<div id="outline-text-headline-56" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; Separate drawers for clocking and logs</span>
 </span></span><span style="display:flex;"><span>(setq org-drawers (quote (<span style="color:#e6db74">&#34;PROPERTIES&#34;</span> <span style="color:#e6db74">&#34;LOGBOOK&#34;</span>)))
@@ -1953,11 +1976,11 @@ Clocking
 </div>
 </div>
 </div>
-<div id="outline-container-headline-56" class="outline-3">
-<h3 id="headline-56">
+<div id="outline-container-headline-57" class="outline-3">
+<h3 id="headline-57">
 Special Tags
 </h3>
-<div id="outline-text-headline-56" class="outline-text-3">
+<div id="outline-text-headline-57" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">; Tags with fast selection keys</span>
 </span></span><span style="display:flex;"><span>(setq org-tag-alist (quote (
@@ -1974,11 +1997,11 @@ Special Tags
 </div>
 </div>
 </div>
-<div id="outline-container-headline-57" class="outline-3">
-<h3 id="headline-57">
+<div id="outline-container-headline-58" class="outline-3">
+<h3 id="headline-58">
 Xeft! 
 </h3>
-<div id="outline-text-headline-57" class="outline-text-3">
+<div id="outline-text-headline-58" class="outline-text-3">
 <div class="src src-comment">
 <pre tabindex="0"><code class="language-comment" data-lang="comment">(use-package deadgrep :ensure t)
 
@@ -1992,11 +2015,11 @@ Xeft!
 </div>
 </div>
 </div>
-<div id="outline-container-headline-58" class="outline-3">
-<h3 id="headline-58">
+<div id="outline-container-headline-59" class="outline-3">
+<h3 id="headline-59">
 Prettify
 </h3>
-<div id="outline-text-headline-58" class="outline-text-3">
+<div id="outline-text-headline-59" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;org-mode-hook</span> (lambda ()
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Beautify Org Checkbox Symbol&#34;</span>
@@ -2017,11 +2040,11 @@ Prettify
 </div>
 </div>
 </div>
-<div id="outline-container-headline-59" class="outline-3">
-<h3 id="headline-59">
+<div id="outline-container-headline-60" class="outline-3">
+<h3 id="headline-60">
 Highlight Text
 </h3>
-<div id="outline-text-headline-59" class="outline-text-3">
+<div id="outline-text-headline-60" class="outline-text-3">
 <p>
 Going forward, just use <code class="verbatim">org-remark</code> for highlights.</p>
 <div class="src src-emacs-lisp">
@@ -2031,11 +2054,11 @@ Going forward, just use <code class="verbatim">org-remark</code> for highlights.
 </div>
 </div>
 </div>
-<div id="outline-container-headline-60" class="outline-3">
-<h3 id="headline-60">
+<div id="outline-container-headline-61" class="outline-3">
+<h3 id="headline-61">
 Structured Templates
 </h3>
-<div id="outline-text-headline-60" class="outline-text-3">
+<div id="outline-text-headline-61" class="outline-text-3">
 <p>
 <code class="verbatim">org-tempo</code> converts <code class="verbatim">&lt;q</code> to quote block once you hit tab.</p>
 <div class="src src-elisp">
@@ -2053,11 +2076,11 @@ Structured Templates
 </div>
 </div>
 </div>
-<div id="outline-container-headline-61" class="outline-3">
-<h3 id="headline-61">
+<div id="outline-container-headline-62" class="outline-3">
+<h3 id="headline-62">
 Keybindings
 </h3>
-<div id="outline-text-headline-61" class="outline-text-3">
+<div id="outline-text-headline-62" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;C-c c&#34;</span>) <span style="color:#e6db74">&#39;org-capture</span>)
 </span></span><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;C-c a&#34;</span>) <span style="color:#e6db74">&#39;org-agenda</span>)
@@ -2067,11 +2090,11 @@ Keybindings
 </div>
 </div>
 </div>
-<div id="outline-container-headline-62" class="outline-3">
-<h3 id="headline-62">
+<div id="outline-container-headline-63" class="outline-3">
+<h3 id="headline-63">
 Pomodoro
 </h3>
-<div id="outline-text-headline-62" class="outline-text-3">
+<div id="outline-text-headline-63" class="outline-text-3">
 <p>
 This is a simple library function that starts a pomodoro timer and
 automatically clocks in the current task. So the expected usage of
@@ -2108,11 +2131,11 @@ pomodoro timer.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-63" class="outline-3">
-<h3 id="headline-63">
+<div id="outline-container-headline-64" class="outline-3">
+<h3 id="headline-64">
 Reveal
 </h3>
-<div id="outline-text-headline-63" class="outline-text-3">
+<div id="outline-text-headline-64" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package ox-reveal :ensure <span style="color:#66d9ef">t</span>
 </span></span><span style="display:flex;"><span>  :custom
@@ -2123,11 +2146,11 @@ Reveal
 </div>
 </div>
 </div>
-<div id="outline-container-headline-64" class="outline-3">
-<h3 id="headline-64">
+<div id="outline-container-headline-65" class="outline-3">
+<h3 id="headline-65">
 org-tree-slide
 </h3>
-<div id="outline-text-headline-64" class="outline-text-3">
+<div id="outline-text-headline-65" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package org-tree-slide :ensure <span style="color:#66d9ef">t</span>)
 </span></span><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f8&gt;&#34;</span>) <span style="color:#e6db74">&#39;org-tree-slide-mode</span>)
@@ -2135,11 +2158,11 @@ org-tree-slide
 </div>
 </div>
 </div>
-<div id="outline-container-headline-65" class="outline-3">
-<h3 id="headline-65">
+<div id="outline-container-headline-66" class="outline-3">
+<h3 id="headline-66">
 Archiving
 </h3>
-<div id="outline-text-headline-65" class="outline-text-3">
+<div id="outline-text-headline-66" class="outline-text-3">
 <p>
 Change the location every year.</p>
 <div class="src src-emacs-lisp">
@@ -2147,22 +2170,22 @@ Change the location every year.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-66" class="outline-3">
-<h3 id="headline-66">
+<div id="outline-container-headline-67" class="outline-3">
+<h3 id="headline-67">
 Diary
 </h3>
-<div id="outline-text-headline-66" class="outline-text-3">
+<div id="outline-text-headline-67" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq diary-file <span style="color:#e6db74">&#34;~/base/personal/org/diary&#34;</span>)
 </span></span><span style="display:flex;"><span>(setq org-agenda-include-diary <span style="color:#66d9ef">t</span>)</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-67" class="outline-3">
-<h3 id="headline-67">
+<div id="outline-container-headline-68" class="outline-3">
+<h3 id="headline-68">
 Mobile
 </h3>
-<div id="outline-text-headline-67" class="outline-text-3">
+<div id="outline-text-headline-68" class="outline-text-3">
 <p>
 I don&#39;t use it anymore. So I&#39;ll leave it commented.</p>
 <div class="comment-block">
@@ -2175,11 +2198,11 @@ I don&#39;t use it anymore. So I&#39;ll leave it commented.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-68" class="outline-3">
-<h3 id="headline-68">
+<div id="outline-container-headline-69" class="outline-3">
+<h3 id="headline-69">
 Org-Remark
 </h3>
-<div id="outline-text-headline-68" class="outline-text-3">
+<div id="outline-text-headline-69" class="outline-text-3">
 <p>
 Update as of [2024-04-04 Thu]: Trying to use it again for doc comments and leaving TODOs
 inside docs.</p>
@@ -2209,21 +2232,21 @@ Allows you to leave annotations on plain text org files.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-69" class="outline-3">
-<h3 id="headline-69">
+<div id="outline-container-headline-70" class="outline-3">
+<h3 id="headline-70">
 Gnuplot mode
 </h3>
-<div id="outline-text-headline-69" class="outline-text-3">
+<div id="outline-text-headline-70" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package gnuplot-mode :ensure <span style="color:#66d9ef">t</span>)</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-70" class="outline-3">
-<h3 id="headline-70">
+<div id="outline-container-headline-71" class="outline-3">
+<h3 id="headline-71">
 Org AI
 </h3>
-<div id="outline-text-headline-70" class="outline-text-3">
+<div id="outline-text-headline-71" class="outline-text-3">
 <p>
 For whatever reason, &#34;string-equal-ignore-case&#34; doesn&#39;t seem to work in my setup. This
 function is referenced through org-ai&#39;s &#34;org-ai.el&#34; file. I have simply just replaced it
@@ -2250,11 +2273,11 @@ Set API token.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-71" class="outline-3">
-<h3 id="headline-71">
+<div id="outline-container-headline-72" class="outline-3">
+<h3 id="headline-72">
 Transclusion
 </h3>
-<div id="outline-text-headline-71" class="outline-text-3">
+<div id="outline-text-headline-72" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package org-transclusion :ensure <span style="color:#66d9ef">t</span>)
 </span></span><span style="display:flex;"><span>(set-face-attribute
@@ -2264,11 +2287,11 @@ Transclusion
 </div>
 </div>
 </div>
-<div id="outline-container-headline-72" class="outline-3">
-<h3 id="headline-72">
+<div id="outline-container-headline-73" class="outline-3">
+<h3 id="headline-73">
 Org Special Copy
 </h3>
-<div id="outline-text-headline-72" class="outline-text-3">
+<div id="outline-text-headline-73" class="outline-text-3">
 <p>
 This command does one of the following:</p>
 <ul>
@@ -2292,11 +2315,11 @@ This command does one of the following:</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-73" class="outline-3">
-<h3 id="headline-73">
+<div id="outline-container-headline-74" class="outline-3">
+<h3 id="headline-74">
 Export Backends
 </h3>
-<div id="outline-text-headline-73" class="outline-text-3">
+<div id="outline-text-headline-74" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-export-backends <span style="color:#f92672">&#39;</span>(ascii html icalendar latex md odt))</span></span></code></pre></div>
 </div>
@@ -2304,11 +2327,11 @@ Export Backends
 </div>
 </div>
 </div>
-<div id="outline-container-headline-74" class="outline-2">
-<h2 id="headline-74">
+<div id="outline-container-headline-75" class="outline-2">
+<h2 id="headline-75">
 Dired Sidebar Mode
 </h2>
-<div id="outline-text-headline-74" class="outline-text-2">
+<div id="outline-text-headline-75" class="outline-text-2">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package dired-sidebar
 </span></span><span style="display:flex;"><span>  :bind ((<span style="color:#e6db74">&#34;C-x C-n&#34;</span> <span style="color:#f92672">.</span> dired-sidebar-toggle-sidebar))
@@ -2334,16 +2357,16 @@ Dired Sidebar Mode
 </div>
 </div>
 </div>
-<div id="outline-container-headline-75" class="outline-2">
-<h2 id="headline-75">
+<div id="outline-container-headline-76" class="outline-2">
+<h2 id="headline-76">
 Keybindings
 </h2>
-<div id="outline-text-headline-75" class="outline-text-2">
-<div id="outline-container-headline-76" class="outline-3">
-<h3 id="headline-76">
+<div id="outline-text-headline-76" class="outline-text-2">
+<div id="outline-container-headline-77" class="outline-3">
+<h3 id="headline-77">
 Misc Bindings
 </h3>
-<div id="outline-text-headline-76" class="outline-text-3">
+<div id="outline-text-headline-77" class="outline-text-3">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; HS minor mode</span>
 </span></span><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;C-c h s&#34;</span>) <span style="color:#e6db74">&#39;hs-minor-mode</span>)
@@ -2365,11 +2388,11 @@ Misc Bindings
 </div>
 </div>
 </div>
-<div id="outline-container-headline-77" class="outline-3">
-<h3 id="headline-77">
+<div id="outline-container-headline-78" class="outline-3">
+<h3 id="headline-78">
 Simplified Bindings for Org Mode
 </h3>
-<div id="outline-text-headline-77" class="outline-text-3">
+<div id="outline-text-headline-78" class="outline-text-3">
 <p>Uncomment this block if you want to use simpler keybindings for
    Org mode.</p>
 <div class="src src-comment">
@@ -2388,11 +2411,11 @@ Simplified Bindings for Org Mode
 </div>
 </div>
 </div>
-<div id="outline-container-headline-78" class="outline-3">
-<h3 id="headline-78">
+<div id="outline-container-headline-79" class="outline-3">
+<h3 id="headline-79">
 Custom Faces
 </h3>
-<div id="outline-text-headline-78" class="outline-text-3">
+<div id="outline-text-headline-79" class="outline-text-3">
 <p>
 I like my headings to be larger than normal text</p>
 <div class="src src-comment">
@@ -2411,11 +2434,11 @@ I like my headings to be larger than normal text</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-79" class="outline-2">
-<h2 id="headline-79">
+<div id="outline-container-headline-80" class="outline-2">
+<h2 id="headline-80">
 Calendar
 </h2>
-<div id="outline-text-headline-79" class="outline-text-2">
+<div id="outline-text-headline-80" class="outline-text-2">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq calendar-latitude <span style="color:#ae81ff">47.79</span>)
 </span></span><span style="display:flex;"><span>(setq calendar-longitude <span style="color:#ae81ff">-122.18</span>)
@@ -2459,11 +2482,11 @@ Calendar
 </div>
 </div>
 </div>
-<div id="outline-container-headline-80" class="outline-2">
-<h2 id="headline-80">
+<div id="outline-container-headline-81" class="outline-2">
+<h2 id="headline-81">
 Misc Configuration
 </h2>
-<div id="outline-text-headline-80" class="outline-text-2">
+<div id="outline-text-headline-81" class="outline-text-2">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; make emacs use the clipboard</span>
 </span></span><span style="display:flex;"><span>(setq x-select-enable-clipboard <span style="color:#66d9ef">t</span>)
@@ -2496,11 +2519,11 @@ Misc Configuration
 </div>
 </div>
 </div>
-<div id="outline-container-headline-81" class="outline-2">
-<h2 id="headline-81">
+<div id="outline-container-headline-82" class="outline-2">
+<h2 id="headline-82">
 Server Starting
 </h2>
-<div id="outline-text-headline-81" class="outline-text-2">
+<div id="outline-text-headline-82" class="outline-text-2">
 <p>(<a href="https://stackoverflow.com/questions/6397323/how-to-avoid-the-message-of-server-start-while-opening-another-emacs-session">Reference</a>)</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;server</span>)
@@ -2509,29 +2532,29 @@ Server Starting
 </div>
 </div>
 </div>
-<div id="outline-container-headline-82" class="outline-2">
-<h2 id="headline-82">
+<div id="outline-container-headline-83" class="outline-2">
+<h2 id="headline-83">
 Post Config
 </h2>
-<div id="outline-text-headline-82" class="outline-text-2">
+<div id="outline-text-headline-83" class="outline-text-2">
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;(find-file &#34;~/base/personal/org/dashboard.org&#34;)</span>
 </span></span><span style="display:flex;"><span>(setq warning-minimum-level <span style="color:#e6db74">&#39;error</span>)</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-83" class="outline-2">
-<h2 id="headline-83">
+<div id="outline-container-headline-84" class="outline-2">
+<h2 id="headline-84">
 ARCHIVE
 </h2>
-<div id="outline-text-headline-83" class="outline-text-2">
+<div id="outline-text-headline-84" class="outline-text-2">
 <p>
 Configuration that is not used anymore</p>
-<div id="outline-container-headline-84" class="outline-3">
-<h3 id="headline-84">
+<div id="outline-container-headline-85" class="outline-3">
+<h3 id="headline-85">
 Obsidian Mode
 </h3>
-<div id="outline-text-headline-84" class="outline-text-3">
+<div id="outline-text-headline-85" class="outline-text-3">
 <p>This mode is not used as of [2024-04-16 Tue].</p>
 <div class="src src-comment">
 <pre tabindex="0"><code class="language-comment" data-lang="comment">(use-package obsidian
@@ -2559,11 +2582,11 @@ Obsidian Mode
 </div>
 </div>
 </div>
-<div id="outline-container-headline-85" class="outline-2">
-<h2 id="headline-85">
+<div id="outline-container-headline-86" class="outline-2">
+<h2 id="headline-86">
 Links to this note
 </h2>
-<div id="outline-text-headline-85" class="outline-text-2">
+<div id="outline-text-headline-86" class="outline-text-2">
 <ul class="backlinks">
 <li><a href="/posts/org_mode/"> org mode</a>: digital garden is also generated using org mode. My <a href="id:7DD192D8-DA31-44C2-9290-6C9CEFF5EAEE">Emacs Configuration</a> has a section</li>
 </ul>

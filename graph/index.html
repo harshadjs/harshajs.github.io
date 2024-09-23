@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
 <title>
 
- 
+Graph
 </title>
 <meta name="description" 
       content=""
@@ -33,7 +33,7 @@
   title=" "
 />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Graph"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content=" "/>
 
 
 
@@ -83,9 +83,7 @@
   <body>
     
   
-    
-  
-  
+
 
 
   <header>
@@ -107,6 +105,14 @@
         
           <li>
             <a href="/graph/" id="Graph"
+              ><em class="fas fa-share fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/dg_index/" id="index"
               ><em class="fas fa-book fa-lg"></em
             ></a>
           </li>
@@ -142,10 +148,10 @@
 
     <div class="intro-header">
       <div class="container">
-        <div class="digital_garden_index-heading">
+        <div class="page-heading">
           
             <h1>
-               
+              Graph
             </h1>
           
             
@@ -156,88 +162,198 @@
   
 
     
-  <div class="container" role="main">
-     <div class="posts-list">
+<div class="container" role="main">
+    <article class="article" class="blog-post">
       
-      <h2> ::index </h2>
-      <b>total notes: 15 </b>
-      
-         <li> <a href="/posts/luck_and_risk/">
-    Luck and Risk </a> (80 words, 2024-09-19 )
- </li>
+  
+
+<!--
+  In the following URLs you may want to replace @latest by @version
+  to prevent unexpected potentionally breaking updates.
+  For example vis-data@1.0.0 instead of vis-data@latest.
+-->
+<script type="text/javascript" src="https://unpkg.com/vis-data@latest/peer/umd/vis-data.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-network@latest/peer/umd/vis-network.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/vis-network/styles/vis-network.min.css" />
+<!-- You may include other packages like Vis Timeline or Vis Graph3D here. -->
+<style>
+body {
+  color: #d3d3d3;
+}
+
+#mynetwork {
+  width: 800px;
+  height: 800px;
+  border: 1px solid #444444;
+  background-color: #242730;
+}
+</style>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+var nodes = new vis.DataSet([{ id: "yaava-mohana",
+        label: "yaava-mohana",
+        url: "/posts/yaava-mohana/",
+        color: "#FCCE7B",
+        value: "0.0",
+        },
+{ id: "quick-cscope-emacs-hack",
+        label: "quick-cscope-emacs-hack",
+        url: "/posts/quick-cscope-emacs-hack/",
+        color: "#A991F1",
+        value: "0.0",
+        },
+{ id: "luck_and_risk",
+        label: "luck_and_risk",
+        url: "/posts/luck_and_risk/",
+        color: "#A991F1",
+        value: "0.0",
+        },
+{ id: "configuration",
+        label: "configuration",
+        url: "/posts/configuration/",
+        color: "#ff665c",
+        value: "1.25",
+        },
+{ id: "termux-setup",
+        label: "termux-setup",
+        url: "/posts/termux-setup/",
+        color: "#ff665c",
+        value: "2.5",
+        },
+{ id: "rehna-tu",
+        label: "rehna-tu",
+        url: "/posts/rehna-tu/",
+        color: "#A991F1",
+        value: "0.0",
+        },
+{ id: "dil-mein-jagi",
+        label: "dil-mein-jagi",
+        url: "/posts/dil-mein-jagi/",
+        color: "#ff665c",
+        value: "0.0",
+        },
+{ id: "org_mode",
+        label: "org_mode",
+        url: "/posts/org_mode/",
+        color: "#5CEFFF",
+        value: "3.75",
+        },
+{ id: "emacs",
+        label: "emacs",
+        url: "/posts/emacs/",
+        color: "#FCCE7B",
+        value: "3.75",
+        },
+{ id: "writing-music-chords",
+        label: "writing-music-chords",
+        url: "/posts/writing-music-chords/",
+        color: "#5CEFFF",
+        value: "0.0",
+        },
+{ id: "generate_digital_garden",
+        label: "generate_digital_garden",
+        url: "/posts/generate_digital_garden/",
+        color: "#5CEFFF",
+        value: "0.0",
+        },
+{ id: "tmux-config",
+        label: "tmux-config",
+        url: "/posts/tmux-config/",
+        color: "#FCCE7B",
+        value: "0.0",
+        },
+{ id: "music",
+        label: "music",
+        url: "/posts/music/",
+        color: "#5CEFFF",
+        value: "5.0",
+        },
+{ id: "literate_programming",
+        label: "literate_programming",
+        url: "/posts/literate_programming/",
+        color: "#FCCE7B",
+        value: "5.0",
+        },
+{ id: "emacs_on_android",
+        label: "emacs_on_android",
+        url: "/posts/emacs_on_android/",
+        color: "#ff665c",
+        value: "1.25",
+        },
+{ id: "org_roam",
+        label: "org_roam",
+        url: "/posts/org_roam/",
+        color: "#FCCE7B",
+        value: "2.5",
+        },
+].map((node, index, arr) => {
+  const angle = 2 * Math.PI * (index / arr.length + 0.75);
+  node.x = 300 * Math.cos(angle);
+  node.y = 300 * Math.sin(angle);
+  return node; }));
+var edges = [{ from: "music", to: "dil-mein-jagi" },
+{ from: "org_mode", to: "emacs_on_android" },
+{ from: "emacs_on_android", to: "termux-setup" },
+{ from: "termux-setup", to: "emacs_on_android" },
+{ from: "literate_programming", to: "configuration" },
+{ from: "music", to: "rehna-tu" },
+{ from: "music", to: "yaava-mohana" },
+{ from: "org_mode", to: "literate_programming" },
+{ from: "music", to: "writing-music-chords" },
+{ from: "emacs", to: "configuration" },
+{ from: "literate_programming", to: "tmux-config" },
+{ from: "literate_programming", to: "generate_digital_garden" },
+{ from: "emacs", to: "generate_digital_garden" },
+{ from: "literate_programming", to: "termux-setup" },
+{ from: "configuration", to: "org_mode" },
+{ from: "org_roam", to: "generate_digital_garden" },
+{ from: "org_roam", to: "emacs_on_android" },
+{ from: "emacs", to: "termux-setup" },
+{ from: "org_mode", to: "configuration" },
+];
+  // create a network
+  var container = document.getElementById("mynetwork");
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    physics: false,
+    nodes: {
+      shape: "dot",
+      size: 13,
+	font: {
+              size: 15,
+	      color: "white",
+    },
+	borderWidth: 0,
+  },
+  edges: {
+    color: "#62686E",
+    width: 2,
+  },
+  }
+  var network = new vis.Network(container, data, options);
+    network.on("selectNode", function (params) {
+            var node = nodes.get(params.nodes[0]);
+            window.open(node.url, '_blank');
+    });
+</script>
+
+
+
+
 
       
-         <li> <a href="/posts/emacs/">
-    emacs </a> (37 words, 2024-08-29 )
- </li>
 
       
-         <li> <a href="/posts/emacs_on_android/">
-    emacs on android </a> (97 words, 2024-08-29 )
- </li>
-
+    </article>
+    
+    
       
-         <li> <a href="/posts/org_roam/">
-    org roam </a> (25 words, 2024-08-29 )
- </li>
 
-      
-         <li> <a href="/posts/music/">
-    music </a> (81 words, 2024-08-28 )
- </li>
-
-      
-         <li> <a href="/posts/org_mode/">
-    org mode </a> (108 words, 2024-08-28 )
- </li>
-
-      
-         <li> <a href="/posts/literate_programming/">
-    literate programming </a> (102 words, 2024-08-26 )
- </li>
-
-      
-         <li> <a href="/posts/tmux-config/">
-    tmux Configuration </a> (387 words, 2024-08-22 )
- </li>
-
-      
-         <li> <a href="/posts/termux-setup/">
-    termux setup </a> (215 words, 2024-08-20 )
- </li>
-
-      
-         <li> <a href="/posts/configuration/">
-    emacs config </a> (5771 words, 2022-06-21 )
- </li>
-
-      
-         <li> <a href="/posts/quick-cscope-emacs-hack/">
-    Quick emacs&#43;cscope hack for broken symlinks </a> (258 words, 2020-10-12 )
- </li>
-
-      
-         <li> <a href="/posts/writing-music-chords/">
-    Organizing Song chords </a> (871 words, 2020-05-01 )
- </li>
-
-      
-         <li> <a href="/posts/dil-mein-jagi/">
-    dil mein jaagi </a> (100 words, 2020-04-28 )
- </li>
-
-      
-         <li> <a href="/posts/rehna-tu/">
-    rehna tu </a> (31 words, 2019-05-06 )
- </li>
-
-      
-         <li> <a href="/posts/yaava-mohana/">
-    yaava  mohana </a> (26 words, 2019-05-06 )
- </li>
-
-      
-    </div>
+    
+  </div>
 
     <footer>
   

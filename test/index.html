@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
 <title>
 
-Emacs
+
 </title>
 <meta name="description" 
       content=""
@@ -32,8 +32,9 @@ Emacs
   href="/index.xml"
   title=" "
 />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Emacs"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="var nodes = new vis.DataSet([
+    { id: &#34;"/>
 
 
 
@@ -86,122 +87,42 @@ Emacs
 
 
 
-  <header>
-    <nav class="navbar">
-  <div class="nav">
-    
-      <a href="/" class="nav-logo">
-        <img
-          src="/images/home.png"
-          width="50"
-          height="50"
-          alt="Logo"
-        />
-      </a>
-    
+  <div class="intro-header"></div>
 
-    <ul class="nav-links">
-      
-        
-          <li>
-            <a href="/graph/" id="Graph"
-              ><em class="fas fa-share fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/dg_index/" id="index"
-              ><em class="fas fa-book fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/tags/" id="Tags"
-              ><em class="fas fa-tag fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/about/" id="About"
-              ><em class="fas fa-user fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/search/" id="Search"
-              ><em class="fas fa-search fa-lg"></em
-            ></a>
-          </li>
-          
-      
-    </ul>
-  </div>
-</nav>
-
-    <div class="intro-header">
-      <div class="container">
-        <div class="tags-heading">
-          
-            <h1>
-              Emacs
-            </h1>
-          
-            
-        </div>
-      </div>
-    </div>
-  </header>
-  
 
     
 <div class="container" role="main">
-    
-
-     <div class="posts-list">
+    <article class="article" class="blog-post">
       
-        
-        
-          <article class="post-preview">
-  <a href="/posts/emacs_on_android/">
-    <h2 class="post-title">emacs on android</h2>
-  </a>
-  <div class="post-entry">
-    
-      <p>I have always wanted access to emacs, and especially Org Mode on my android phone.</p>
-      <a href="/posts/emacs_on_android/" class="post-read-more"
-        >Read More</a
-      >
-    
-  </div>
+    var nodes = new vis.DataSet([
+    { id: "str1", label: "google2", url: "/posts/literate_programming/", color: "#ff665c" },
+    { id: 2, label: "Node 2" },
+    { id: 3, label: "Node 3" },
+    { id: 4, label: "Node 4" },
+    { id: 5, label: "Node 5" }
+  ]);
 
-  <div class="postmeta">
-    <span class="meta-post">
-  
-    Created:
-    Aug 29 2024,
-  Modified: Aug 29 2024
-  
+  // create an array with edges
+  var edges = new vis.DataSet([
+    { from: "str1", to: 3 },
+    { from: "str1", to: 2 },
+    { from: 2, to: 4 },
+    { from: 2, to: 5 },
+    { from: 3, to: 3 }
+  ]);
 
-  
-</span>
 
-  </div>
-</article>
 
-        
       
-    </div>
+
+      
+    </article>
+    
+    
+      
+
     
   </div>
-
 
     <footer>
   

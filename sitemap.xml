@@ -89,11 +89,17 @@
     <loc>/posts/yaava-mohana/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/test/</loc>
+  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/about2/</loc>
   </url><url>
     <loc>/contact/</loc>
+  </url><url>
+    <loc>/posts/generate_digital_garden/</loc>
+  </url><url>
+    <loc>/dg_index/</loc>
   </url><url>
     <loc>/graph/</loc>
   </url><url>
