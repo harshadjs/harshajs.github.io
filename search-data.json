@@ -155,16 +155,6 @@
         ,
             {
                 "id": 15,
-                "href": "/test/",
-                "title": "",
-                "section": "",
-                "date" : "0001.01.01",
-                "body": "  var nodes = new vis.DataSet([\n    { id: \"str1\", label: \"google2\", url: \"/posts/literate_programming/\", color: \"#ff665c\" },\n    { id: 2, label: \"Node 2\" },\n    { id: 3, label: \"Node 3\" },\n    { id: 4, label: \"Node 4\" },\n    { id: 5, label: \"Node 5\" }\n  ]);\n\n  // create an array with edges\n  var edges = new vis.DataSet([\n    { from: \"str1\", to: 3 },\n    { from: \"str1\", to: 2 },\n    { from: 2, to: 4 },\n    { from: 2, to: 5 },\n    { from: 3, to: 3 }\n  ]);\n"
-            }
-    
-        ,
-            {
-                "id": 16,
                 "href": "/about/",
                 "title": "::about",
                 "section": "",
@@ -174,7 +164,7 @@
     
         ,
             {
-                "id": 17,
+                "id": 16,
                 "href": "/about2/",
                 "title": "about",
                 "section": "",
@@ -184,7 +174,7 @@
     
         ,
             {
-                "id": 18,
+                "id": 17,
                 "href": "/contact/",
                 "title": "Contact Me",
                 "section": "",
@@ -194,7 +184,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 18,
                 "href": "/posts/generate_digital_garden/",
                 "title": "Digital Garden Graph Generator",
                 "section": "posts",
@@ -204,7 +194,7 @@
     
         ,
             {
-                "id": 20,
+                "id": 19,
                 "href": "/graph/",
                 "title": "Graph",
                 "section": "",
